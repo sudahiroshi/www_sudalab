@@ -1,5 +1,12 @@
+@media screen and (max-width: 700px) {
+  #content {
+    flex-direction: column;
+  }
+}
+
 html,
 body {
+  font-family: sans-serif;
   padding: 0px;
   background-color: #eee;
 }
@@ -45,8 +52,9 @@ nav ul li.active a {
   border-bottom: 5px solid #70c74e;
   color: #f0f0f0;
 }
-div#content {
+#content {
   display: flex;
+  flex-wrap: wrap;
   flex-wrap: wrap;
   padding-right: 15px;
   padding-left: 15px;
@@ -58,6 +66,24 @@ main {
 }
 aside {
   flex: 0 0 200px;
+}
+.danger2:before {
+  display: inline;
+  padding: 0.2em 0.6em 0.3em;
+  margin-right: 0.5em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25em;
+  background-color: #d9534f;
+  color: #ffffff;
+  content: "注意";
+}
+.danger2 {
+  border-bottom: 1px solid #ff0000;
 }
 
 .navbar {
