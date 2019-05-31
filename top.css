@@ -3,6 +3,13 @@
     flex-direction: column;
   }
 }
+@media screen and (max-width: 400px) {
+  #content {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+}
 
 html,
 body {
@@ -20,8 +27,8 @@ nav {
   background-color: #181d0b;
 }
 p {
-    margin: 0;
-    color: #0c0c0c;
+  margin: 0;
+  color: #0c0c0c;
 }
 nav ul {
   display: table;
@@ -73,8 +80,8 @@ aside {
   flex: 0 0 250px;
 }
 aside p {
-    font-size: 80%;
-    color: #202020;
+  font-size: 80%;
+  color: #202020;
 }
 .simulator {
   border: 1px solid #000000;
@@ -104,9 +111,9 @@ aside p {
   flex: 0 0;
 }
 .danger {
-    font-size: 90%;
-    color: #202020;
-    margin: 0.5em 0.5em;
+  font-size: 90%;
+  color: #202020;
+  margin: 0.5em 0.5em;
 }
 .danger:before {
   display: inline;
@@ -125,49 +132,48 @@ aside p {
 }
 
 .learn {
-    display: inline-block;
-    padding: 6px 12px;
-    margin-bottom: 0;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.42857143;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    touch-action: manipulation;
-    cursor: pointer;
-    user-select: none;
-    background-image: none;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    color: #fff;
-    background-color: #5cb85c;
-    border-color: #4cae4c;
-    text-decoration: none;
-  }
-  .learn.active.focus,
-  .learn.active:focus,
-  .learn.focus,
-  .learn:active.focus,
-  .learn:active:focus,
-  .learn:focus {
-    outline: thin dotted;
-    outline: 5px auto -webkit-focus-ring-color;
-    outline-offset: -2px;
-  }
-  .learn.focus,
-  .learn:focus,
-  .learn:hover {
-    text-decoration: none;
-    color: #fff;
-    background-color: #449d44;
-    border-color: #255625;
-  }
-  .learn.active,
-  .learn:active {
-    background-image: none;
-    outline: 0;
-    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  }
-
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+  text-decoration: none;
+}
+.learn.active.focus,
+.learn.active:focus,
+.learn.focus,
+.learn:active.focus,
+.learn:active:focus,
+.learn:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.learn.focus,
+.learn:focus,
+.learn:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #449d44;
+  border-color: #255625;
+}
+.learn.active,
+.learn:active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
