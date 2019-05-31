@@ -13,10 +13,15 @@ body {
 header,
 footer {
   width: 100%;
+  text-align: center;
 }
 nav {
   border-bottom: 1px solid #ccc;
   background-color: #181d0b;
+}
+p {
+    margin: 0;
+    color: #0c0c0c;
 }
 nav ul {
   display: table;
@@ -55,22 +60,58 @@ nav ul li.active a {
 #content {
   display: flex;
   flex-wrap: wrap;
-  flex-wrap: wrap;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 30px;
+  padding-left: 30px;
   margin-right: auto;
   margin-left: auto;
 }
 main {
+  margin: 1em;
   flex: 1;
 }
 aside {
-  flex: 0 0 200px;
+  flex: 0 0 250px;
 }
-.danger2:before {
+aside p {
+    font-size: 80%;
+    color: #202020;
+}
+.simulator {
+  border: 1px solid #000000;
+  padding: 0;
+  border-radius: 0.5em;
+}
+.simulator h3 {
+  margin: 0;
+  padding: 0.3em;
+  background-color: #b6daa8;
+  border-bottom: 1px solid #000000;
+  border-radius: 0.3em 0.3em 0 0;
+}
+.description {
+  background-color: #fffffc;
+  padding: 0.5em;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 0 0 0.5em 0.5em;
+}
+.description .left {
+  flex: 1;
+  margin: 0.3em;
+}
+.description .right {
+  flex: 0 0;
+}
+.danger {
+    font-size: 90%;
+    color: #202020;
+    margin: 0.5em 0.5em;
+}
+.danger:before {
   display: inline;
-  padding: 0.2em 0.6em 0.3em;
-  margin-right: 0.5em;
+  padding: 0.2em 0.6em 0.2em;
+  margin: 0.8em 0.5em;
   font-size: 75%;
   font-weight: 700;
   line-height: 1;
@@ -82,139 +123,51 @@ aside {
   color: #ffffff;
   content: "注意";
 }
-.danger2 {
-  border-bottom: 1px solid #ff0000;
-}
 
-.navbar {
-  margin: 0px;
-}
+.learn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    text-decoration: none;
+  }
+  .learn.active.focus,
+  .learn.active:focus,
+  .learn.focus,
+  .learn:active.focus,
+  .learn:active:focus,
+  .learn:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+  }
+  .learn.focus,
+  .learn:focus,
+  .learn:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #449d44;
+    border-color: #255625;
+  }
+  .learn.active,
+  .learn:active {
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  }
 
-.container > footer p {
-  text-align: center;
-  /* center align it with the container */
-}
-
-.container {
-  width: 820px;
-  /* downsize our container to make the content feel a bit tighter and more cohesive. NOTE: this removes two full columns from the grid, meaning you only go to 14 columns and not 16. */
-}
-/* The white background content wrapper */
-
-.content {
-  background-color: #fff;
-  padding: 20px;
-  margin: 0 -20px;
-  /* negative indent the amount of the padding to maintain the grid system */
-  -webkit-border-radius: 0 0 6px 6px;
-  -moz-border-radius: 0 0 6px 6px;
-  border-radius: 0 0 6px 6px;
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-}
-/* Page header tweaks */
-
-.page-header {
-  background-color: #f5f5f5;
-  padding: 20px 20px 10px;
-  margin: -20px -20px 20px;
-}
-/* Styles you shouldn't keep as they are for displaying this base example only */
-
-.content .span10,
-.content .span4 {
-  min-height: 500px;
-}
-/* Give a quick and non-cross-browser friendly divider */
-
-.content .span4 {
-  margin-left: 0;
-  padding-left: 19px;
-  border-left: 1px solid #eee;
-}
-
-.topbar .btn {
-  border: 0;
-}
-
-.atomic {
-  border-bottom: ridge;
-}
-#sideView_wrapper {
-  height: 400px;
-  width: 500px;
-  border-top: 1px solid #999 !important;
-  border-left: 1px solid #999 !important;
-  box-shadow: -1px 2px 2px rgba(0, 0, 0, 0.3) !important;
-  position: fixed !important;
-  right: 0px !important;
-  bottom: 0px !important;
-  z-index: 2147483646;
-}
-
-#sideView_ifr {
-  border: none !important;
-  height: 100%;
-  width: 100%;
-}
-
-#sideView_wrapper {
-  position: fixed !important;
-  left: auto !important;
-  right: 0px !important;
-  top: auto !important;
-  bottom: 0px !important;
-}
-
-#sideView_wrapper .ui-resizable-nw {
-  background-image: url("chrome-extension://oonalfdoahlmjaoloddjenihohbfodme/img/resize-grip-nw.png") !important;
-  background-repeat: no-repeat !important;
-  cursor: nw-resize !important;
-  width: 20px !important;
-  height: 20px !important;
-  position: absolute !important;
-  top: 0px !important;
-  left: 0px !important;
-}
-
-sideView_icons {
-  padding: 0 !important;
-  margin: 0 !important;
-  border-style: none !important;
-  z-index: 1002 !important;
-}
-
-#pun_ui {
-  width: 24px;
-  height: 24px;
-  position: absolute !important;
-  left: 7px !important;
-  top: -2px !important;
-  z-index: 1005;
-}
-
-#pun_ui[ison="true"] {
-  background-image: url("chrome-extension://oonalfdoahlmjaoloddjenihohbfodme/img/pin_on.png") !important;
-}
-
-#pun_ui[ison="false"] {
-  background-image: url("chrome-extension://oonalfdoahlmjaoloddjenihohbfodme/img/pin_off.png") !important;
-}
-
-#toggle_header {
-  width: 24px;
-  height: 24px;
-  position: absolute !important;
-  left: 33px !important;
-  top: 0px !important;
-}
-
-#toggle_header[ison="true"] {
-  background-image: url("chrome-extension://oonalfdoahlmjaoloddjenihohbfodme/img/openheader.png") !important;
-}
-
-#toggle_header[ison="false"] {
-  background-image: url("chrome-extension://oonalfdoahlmjaoloddjenihohbfodme/img/hideheader.png") !important;
-  z-index: 1005;
-}
