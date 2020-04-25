@@ -1,0 +1,3 @@
+[submodule "RandomNumber"]
+	path = RandomNumber
+	url = https://github.com/sudahiroshi/RandomNumber.git
