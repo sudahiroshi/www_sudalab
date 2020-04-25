@@ -16,3 +16,6 @@
 [submodule "solid_wave"]
 	path = solid_wave
 	url = https://github.com/sudahiroshi/solid_wave.git
+[submodule "doppler"]
+	path = doppler
+	url = https://github.com/sudahiroshi/doppler.git
