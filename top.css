@@ -73,16 +73,44 @@ aside p {
   color: #202020;
 }
 .simulator {
+  margin-bottom: 0.3em;
   border: 1px solid #000000;
   padding: 0;
   border-radius: 0.5em;
 }
-.simulator h3 {
+.simulator_header {
   margin: 0;
   padding: 0.3em;
   background-color: #b6daa8;
   border-bottom: 1px solid #000000;
   border-radius: 0.3em 0.3em 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.simulator_title {
+  font-size: 1.17em;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  vertical-align: middle;
+}
+.simulator_header .right {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.right .icons {
+  align-items: center;
+  display: inline-flex;
+}
+.icon {
+  margin: 0.1em;
+  height: 1.2em;
+  width: 1.2em;
+  
 }
 .description {
   background-color: #fffffc;
@@ -98,6 +126,7 @@ aside p {
 }
 .description .right {
   flex: 0 0;
+  display: inline-flex;
 }
 .danger {
   font-size: 90%;
@@ -119,11 +148,29 @@ aside p {
   color: #ffffff;
   content: "注意";
 }
-
+.speaker:after {
+  display: inline-block;
+  background: url(images/spk_wb.svg) no-repeat;
+  content: "";
+  height: 1em;
+  width: 1em;
+  vertical-align: middle;
+}
+.mic:after {
+  display: inline-block;
+  background: url(images/mic_wb.svg) no-repeat;
+  content: "";
+  height: 1em;
+  width: 1em;
+  vertical-align: middle;
+}
 .learn {
   display: inline-block;
-  padding: 6px 12px;
+  padding: 4px 12px;
+  margin-top: 0;
   margin-bottom: 0;
+  margin-left: 0.5em;
+  margin-right: 0.3em;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.42857143;
@@ -137,9 +184,10 @@ aside p {
   border: 1px solid transparent;
   border-radius: 4px;
   color: #fff;
-  background-color: #5cb85c;
-  border-color: #4cae4c;
+  background-color: #449d44;
+  border-color: #255625;
   text-decoration: none;
+  vertical-align: middle;
 }
 .learn.active.focus,
 .learn.active:focus,
@@ -156,7 +204,7 @@ aside p {
 .learn:hover {
   text-decoration: none;
   color: #fff;
-  background-color: #449d44;
+  background-color: #173817;
   border-color: #255625;
 }
 .learn.active,
