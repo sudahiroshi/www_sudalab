@@ -19,3 +19,27 @@
 [submodule "doppler"]
 	path = doppler
 	url = https://github.com/sudahiroshi/doppler.git
+[submodule "montecarlo"]
+	path = montecarlo
+	url = https://github.com/sudahiroshi/montecarlo.git
+[submodule "3d_disc"]
+	path = 3d_disc
+	url = https://github.com/sudahiroshi/3d_disc.git
+[submodule "growth_of_soundwave"]
+	path = growth_of_soundwave
+	url = https://github.com/sudahiroshi/growth_of_soundwave.git
+[submodule "wave_equation"]
+	path = wave_equation
+	url = https://github.com/sudahiroshi/wave_equation.git
+[submodule "double_source"]
+	path = double_source
+	url = https://github.com/sudahiroshi/double_source.git
+[submodule "reverberation"]
+	path = reverberation
+	url = https://github.com/sudahiroshi/reverberation.git
+[submodule "source_position"]
+	path = source_position
+	url = https://github.com/sudahiroshi/source_position.git
+[submodule "2opt"]
+	path = 2opt
+	url = https://github.com/sudahiroshi/2opt.git
