@@ -43,3 +43,6 @@
 [submodule "2opt"]
 	path = 2opt
 	url = https://github.com/sudahiroshi/2opt.git
+[submodule "SoundGenerator"]
+	path = SoundGenerator
+	url = https://github.com/sudahiroshi/SoundGenerator.git
