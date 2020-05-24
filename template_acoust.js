@@ -20,70 +20,76 @@ const datas = [
         url: "./growth_of_soundwave/growth_of_soundwave.html",
         description: "停止していたクランクが動き出し,音波が生成される瞬間を学習するための教材です.",
         tag: ["アニメーション"]
-    }, 
+    },
     {
         name: "波の種類",
         alert: [],
         url: "./solid_wave/solid_wave.html",
         description: "縦波・横波・弾性表面波の振動の様子を比較する教材です.",
         tag: ["アニメーション"]
-    }, 
+    },
     {
         name: "振動の方程式",
         alert: [],
         url: "./wave_equation/wave_equation.html",
         description: "音波が伝わる際の,一部を拡大した教材です.",
         tag: ["アニメーション"]
-    }, 
+    },
     {
         name: "二重音源による音場",
         alert: [],
         url: "./double_source/double_source.html",
         description: "2つの音源から作られる音場を再現した教材です.",
         tag: ["アニメーション"]
-    }, 
+    },
     {
         name: "弦の振動",
         alert: [],
         url: "./StringVibration/StringVibration.html",
         description: "弦の振動の様子を観察する教材です.",
         tag: ["アニメーション"]
-    }, 
+    },
     {
         name: "円板振動",
         alert: [],
         url: "./3d_disc/anim.html",
         description: "円板振動の様子を観察する教材です.",
         tag: ["アニメーション"]
-    }, 
+    },
     {
+        name: "ファンクションジェネレータ",
+        alert: ["spk"],
+        url: "./SoundGenerator/",
+        description: "正弦波，三角波，矩形波などの音を出力する教材です．",
+        tag: ["音声出力"]
+    },    {
         name: "スペクトラム表示",
         alert: ["mic"],
         url: "./freqdraw/freqdraw.html",
         description: "音声入力をリアルタイムでフーリエ変換し,周波数成分を表示します.起動すると「マイクへのアクセスを求めています」と表示されるので「許可」ボタンをクリックしてください.",
         tag: ["音声入力","アニメーション"]
-    }, 
-    {
-        name: "残響",
-        alert: ["mic","spk"],
-        url: "./reverberation/tatami.html",
-        description: "音声入力にリアルタイムで畳み込み演算を行い，残響を付加した音声を出力します．起動すると「マイクへのアクセスを求めています」と表示されるので「許可」ボタンをクリックしてください.",
-        tag: ["音声入力","音声出力"]
-    }, 
-    {
-        name: "音源位置",
-        alert: ["spk"],
-        url: "./source_position/simulator2.html",
-        description: "畳み込み演算により音源位置を変えた音を出力します．",
-        tag: []
-    }, 
+    },
+    // {
+    //     name: "残響",
+    //     alert: ["mic","spk"],
+    //     url: "./reverberation/tatami.html",
+    //     description: "音声入力にリアルタイムで畳み込み演算を行い，残響を付加した音声を出力します．起動すると「マイクへのアクセスを求めています」と表示されるので「許可」ボタンをクリックしてください.",
+    //     tag: ["音声入力","音声出力"]
+    // },
+    // {
+    //     name: "音源位置",
+    //     alert: ["spk"],
+    //     url: "./source_position/simulator2.html",
+    //     description: "畳み込み演算により音源位置を変えた音を出力します．",
+    //     tag: []
+    // },
     {
         name: "フォルマントから母音を合成",
         alert: ["spk"],
         url: "./vowel_simulator/vowel.html",
         description: "フォルマント周波数から母音を合成します．マウスドラッグでリアルタイムに追従します.",
         tag: []
-    }, 
+    },
 /*     {
         name: "",
         alert: [],
