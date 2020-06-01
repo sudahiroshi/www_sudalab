@@ -46,3 +46,6 @@
 [submodule "SoundGenerator"]
 	path = SoundGenerator
 	url = https://github.com/sudahiroshi/SoundGenerator.git
+[submodule "dft"]
+	path = dft
+	url = https://github.com/sudahiroshi/dft.git
