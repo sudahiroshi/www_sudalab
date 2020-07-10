@@ -49,3 +49,6 @@
 [submodule "dft"]
 	path = dft
 	url = https://github.com/sudahiroshi/dft.git
+[submodule "synthesizer"]
+	path = synthesizer
+	url = https://github.com/sudahiroshi/synthesizer.git

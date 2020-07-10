@@ -1,6 +1,13 @@
 
 const datas = [
     {
+        name: "簡易シンセサイザー",
+        alert: [ "spk" ],
+        url: "./synthesizer/",
+        description: "sin波を合成して音を生成するシミュレータです．エンベロープの調整も可能です．",
+        tag: ["音声出力"]
+    },
+    {
         name: "ドップラー効果",
         alert: [ "spk" ],
         url: "./doppler/",
