@@ -52,3 +52,6 @@
 [submodule "synthesizer"]
 	path = synthesizer
 	url = https://github.com/sudahiroshi/synthesizer.git
+[submodule "matrix_ops"]
+	path = matrix_ops
+	url = https://github.com/sudahiroshi/matrix_ops
