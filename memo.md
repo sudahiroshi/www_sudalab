@@ -15,6 +15,7 @@ $ git pull origin master
 $ cd ..
 $ git commit -am 'freqdraw updated'
 $ git push
+```
 
 
 ## Submoduleの追加方法
