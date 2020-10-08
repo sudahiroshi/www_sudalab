@@ -7,6 +7,13 @@ const datas = [
         description: "最近傍法と2opt改善法を比較する教材です．",
         tag: []
     },
+    {
+        name: "行列による座標変換",
+        alert: [],
+        url: "./matrix_ops/",
+        description: "行列を用いて座標を拡大・縮小，回転，平行移動する様子を観察する教材です．",
+        tag: []
+    },  
 /*     {
         name: "",
         alert: [],
