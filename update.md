@@ -4,3 +4,4 @@
 -|-|-
 2020/4/30 | chord | iPhone,iPadで音が出ないのを修正
 2020/5/26 | SoundGenerator | 信号音を鳴らすシミュレータを追加
+2023/4/18 | SoundGenerator | 和音に対応
