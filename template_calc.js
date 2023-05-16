@@ -27,7 +27,14 @@ const datas = [
     url: "./dft/phase.html",
     description: "正弦波の位相をsinとcosで変更した結果を表示する教材です．上にある[音あり版]から音機能を削除したものです．",
     tag: []
-},
+  },
+  {
+        name: "周波数成分の詳細",
+        alert: [],
+        url: "./graph_dft/index.html",
+        description: "周波数成分の詳細を可視化する教材です．",
+        tag: []
+  },
 /*     {
         name: "",
         alert: [],
