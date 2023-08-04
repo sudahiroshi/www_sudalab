@@ -58,3 +58,6 @@
 [submodule "graph_dft"]
 	path = graph_dft
 	url = https://github.com/sudahiroshi/graph_dft
+[submodule "camera_input"]
+	path = camera_input
+	url = https://github.com/sudahiroshi/camera_input

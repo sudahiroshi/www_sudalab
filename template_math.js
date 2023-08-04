@@ -13,7 +13,14 @@ const datas = [
         url: "./matrix_ops/",
         description: "行列を用いて座標を拡大・縮小，回転，平行移動する様子を観察する教材です．",
         tag: []
-    },  
+    }, 
+    {
+        name: "カメラ入力による画像フィルタ",
+        alert: [ "cam" ],
+        url: "./camera_input/",
+        description: "画像フィルタの教材で，カメラ入力に対して処理を行います．",
+        tag: []
+    },   
 /*     {
         name: "",
         alert: [],
@@ -42,8 +49,9 @@ template[0] = `
 
 let output = datas.map( (data)=>{
     let alert = data.alert.map( (element) => {
-        if( element == "spk" ) return `<img src="images/spk_wb.svg" class="icon" title="音が出ます"　alt="音が出ます"></img>`;
+        if( element == "spk" ) return `<img src="images/spk_wb.svg" class="icon" title="音が出ます" alt="音が出ます"></img>`;
         if( element == "mic" ) return `<img src="images/mic_wb.svg" class="icon" title="音声入力を使用します" alt="音声入力を使用します"></img>`;
+        if( element == "cam" ) return `<img src="images/icons8-camera.svg" class="icon" title="カメラ入力を使用します" alt="カメラ入力を使用します"></img>`;
     });
     return`<article class="simulator">
 <div class="simulator_header">
